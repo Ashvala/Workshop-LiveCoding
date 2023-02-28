@@ -10,7 +10,7 @@
     // import Math from './slides/examples/Math.svelte';
     // import Media from './slides/examples/Media.svelte';
     // import Transitions from './slides/examples/Transitions.svelte';
-    import StrudelSlide from "./slides/StrudelSlide.svelte";
+    import WhatArePatterns from "./slides/WhatArePatterns.svelte";
     import LiveCodingExamples from './slides/LiveCodingExamples.svelte';
     import WhatIsStrudel from './slides/WhatIsStrudel.svelte';
     const partner = ['Svelte', 'Reveal.js'];
@@ -22,8 +22,4 @@
 <IncompleteList />
 <LiveCodingExamples />
 <WhatIsStrudel />
-<StrudelSlide />
-
-
-
-
+<WhatArePatterns />
