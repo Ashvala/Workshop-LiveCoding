@@ -1,35 +1,44 @@
 <script>
-    import { onMount } from 'svelte';
+    // import { onMount } from 'svelte';
     import Slide from '../lib/Slide.svelte';
-    import Code from '../lib/Code.svelte';
 
-    let title;
-    onMount(() => {
-        let timeout;
-        title = new Promise(resolve => {
-            timeout = setTimeout(() => resolve('LIVE CODING:an introduction'), 1000);
-        });
-        () => clearTimeout(timeout);
-    });
+    // let title;
+    // onMount(() => {
+    //     let timeout;
+    //     title = new Promise(resolve => {
+    //         timeout = setTimeout(() => resolve('LIVE CODING:an introduction'), 1000);
+    //     });
+    //     () => clearTimeout(timeout);
+    // });
 </script>
 
 <Slide>
-    <h2>
-        {#await title}
-            Wait a sec...
-        {:then result}
-            {result}
-        {/await}
-    </h2>
-    <h2 class="code_style"> 
-        Ash x IJC8 (fka M3RGE C0NFL1CT)
-    </h2>
+    <div class="code">
+        <h1 class="hack">
+            <!-- {#await title}
+                Wait a sec...
+            {:then result}
+                {result}
+            {/await} -->
+            LIVE CODING:
+        </h1>
+        <h2 class="hack">An Introduction</h2>
+        <h2> 
+            Ash <span class="gray">x</span> IJC
+        </h2>
+        <small class="gray">(fka M3RGE C0NFL1CT)</small>
+    </div>
 </Slide>
 <style> 
-    .code_style {
+    .code > * {
         font-family: 'Fira Code', monospace;
-        font-size: 1.5em;
-        color: #f8f8f2;
-        text-align: center;
+    }
+
+    .gray {
+        color: gray;
+    }
+
+    .hack {
+        color: #00ef11;
     }
 </style>
