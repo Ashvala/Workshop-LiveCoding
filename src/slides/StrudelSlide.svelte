@@ -1,15 +1,13 @@
 <script>
     import { onMount } from 'svelte';
      import Slide from '../lib/Slide.svelte';
+     import Strudel from '../lib/Strudel.svelte';
 </script>
 
 <Slide>
     <h1> Introduction to Patterns </h1>
 
-    <strudel-repl>
-        This is a Strudel REPL.
-        You can type code here and it will be evaluated in the browser.
-        You can also use the buttons to load example code.
-    </strudel-repl>
-
+    <Strudel>
+s("bd sd")
+    </Strudel>
 </Slide>
