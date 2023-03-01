@@ -54,6 +54,10 @@ stack(
             <p>
                 The key point is that patterns allow you to <em>express musical ideas concisely</em>: in particular, as <em>compositions of simpler patterns!</em>
             </p>
+            <p>
+                A key feature of patterns is that you can modify patterns using other patterns. For example, you can stack patterns together, concatenate patterns, or modulate effects with another pattern.
+Strudel includes many functions to combine patterns in different ways, and learning how (and when) to use them is key to mastering the language.
+            </p>
         </aside>
     </section>
 </Slide>
