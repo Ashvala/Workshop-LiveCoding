@@ -12,6 +12,8 @@ s("hh*4")
 
 // s("hh*4").gain(0.5)
 
+// s("hh*4").pan(0.1)
+
 // s("hh*4").lpf(2000)
 
 // s("hh*4").hpf(5000)
@@ -21,6 +23,8 @@ s("hh*4")
 // s("hh*4").delaytime(1/8).delay(0.6)
 
 // s("hh*4").crush(4)
+
+// n("c3 e3").decay(0.2).sustain(0)
 
 // n("c a f e").s('sawtooth')
         `} />
@@ -32,11 +36,15 @@ s("hh*4")
 
 // s("hh*4").gain(".3 .4 .7 .9")
 
+// s("hh*4").pan("<.5 1 .5 0>")
+
 // s("sd*4").lpf("<100 500 2000 5000>")
 
 // s("hh*2").room("[0|.7]")
 
 // s("hh*4").crush("<16 8 4 2 1>")
+
+// n("c3 e3").decay("<.1 .2 .3 .4>").sustain(0)
 
 // n("c a f e").s("sawtooth square triangle sine")
         `} />
