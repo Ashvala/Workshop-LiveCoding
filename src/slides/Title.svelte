@@ -1,32 +1,69 @@
 <script>
-    // import { onMount } from 'svelte';
-    import Slide from '../lib/Slide.svelte';
+    import { onMount } from 'svelte'
+    import Slide from '../lib/Slide.svelte'
 
-    // let title;
-    // onMount(() => {
-    //     let timeout;
-    //     title = new Promise(resolve => {
-    //         timeout = setTimeout(() => resolve('LIVE CODING:an introduction'), 1000);
-    //     });
-    //     () => clearTimeout(timeout);
-    // });
+    // Title animation
+    // (Yes, I spent too much time on this.)
+    let root
+
+    function getTextNodes(node) {
+        if (node.nodeName === "#text") {
+            return [node]
+        }
+        return [].concat(...[...node.childNodes].map(getTextNodes))
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms))
+    }
+
+    function choose(array) {
+        return array[Math.floor(Math.random() * array.length)]
+    }
+
+    function makeGarbage(s, prob) {
+        const symbols = "[]()<>[]{}!@/*%"
+        const out = []
+        for (const c of [...s]) {
+            if (/\S/.test(c) && Math.random() < prob) {
+                out.push(choose(symbols))
+            } else {
+                out.push(c)
+            }
+        }
+        return out.join("")
+    }
+
+    onMount(() => {
+        const textNodes = getTextNodes(root)
+        const originalText = textNodes.map(node => node.nodeValue)
+        const animation = async () => {
+            const n = 150
+            for (let i = 0; i < n; i++) {
+                const prob = 1 - (i / n)
+                for (const [i, node] of textNodes.entries()) {
+                    node.nodeValue = makeGarbage(originalText[i], prob)
+                }
+                await sleep(60 + 80 * (i + 1) / n)
+            }
+            for (const [i, node] of textNodes.entries()) {
+                node.nodeValue = originalText[i]
+            }
+        }
+        animation()
+    })
 </script>
 
 <Slide>
-    <div class="code">
+    <div bind:this={root} class="code">
         <h1 class="hack">
-            <!-- {#await title}
-                Wait a sec...
-            {:then result}
-                {result}
-            {/await} -->
             LIVE CODING:
         </h1>
         <h2 class="hack">An Introduction</h2>
         <h2> 
             Ash <span class="gray">x</span> IJC
         </h2>
-        <small class="gray">(fka M3RGE C0NFL1CT)</small>
+        <small class="gray">(aka M3RGE C0NFL1CT)</small>
     </div>
 </Slide>
 <style> 
