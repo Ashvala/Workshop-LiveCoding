@@ -109,9 +109,9 @@ s("[bd hh sd oh]/8")
 
 // s("[bd hh sd oh]*8")
 
-// n("bd!2 sd oh")
+// s("bd!2 sd oh")
 
-// n("bd@2 sd oh")
+// s("bd@2 sd oh")
 
 // s("{bd sd, hh hh oh}")
 
