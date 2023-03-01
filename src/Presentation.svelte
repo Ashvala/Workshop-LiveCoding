@@ -1,7 +1,7 @@
 <script>
     import Title from './slides/Title.svelte'
     import WhatIsLiveCoding from './slides/WhatIsLiveCoding.svelte'
-    import IncompleteList from './slides/IncompleteList.svelte'
+    import LanguageList from './slides/LanguageList.svelte'
     // import AutoAnimate from './slides/examples/AutoAnimate.svelte'
     // import Backgrounds from './slides/examples/Backgrounds.svelte'
     // import Barebones from './slides/examples/Barebones.svelte'
@@ -27,7 +27,7 @@
 <Title/>
 <!-- <LayoutHelpers /> -->
 <WhatIsLiveCoding/>
-<IncompleteList />
+<LanguageList />
 <LiveCodingExamples />
 <WhatIsStrudel />
 <WhatArePatterns />
