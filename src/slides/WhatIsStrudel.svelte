@@ -27,6 +27,6 @@
         Mostly important for our workshop today:<br/>
         <em>It runs in the browser!</em><br/><br/>
         So you don't need to install or set up anything.<br/>
-        Just go to <a href="https://strudal.tidalcycles.org">strudal.tidalcycles.org</a>.
+        Just go to <a href="https://strudel.tidalcycles.org">strudel.tidalcycles.org</a>.
     </section>
 </Slide>
