@@ -33,8 +33,6 @@
 <WhatArePatterns />
 <MiniNotation />
 <PatternConstructors />
-<MiniNotation />
-<PatternConstructors />
 <Modifiers />
 <TipsAndTricks />
 <CollaborativeLiveCoding />

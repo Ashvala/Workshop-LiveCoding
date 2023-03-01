@@ -4,7 +4,7 @@
 </script>
 
 <Slide>
-    <h2>Mini Notation Basics</h2>
+    <h2>Mini-Notation Basics</h2>
 
     <section>
         Sequencing (aka <code>fastcat</code>):
@@ -19,13 +19,13 @@ s("bd")
 // s("bd hh sd oh")
 `} />
 
-        <aside class="note">
+        <aside class="notes">
             Everything happens in one cycle. If you add more elements to the sequence, the subdivisions get smaller.
         </aside>
     </section>
 
     <section>
-        Nested sequencing:
+        Nesting:
 
         <Strudel code={`
 s("bd [hh oh]")
@@ -53,7 +53,7 @@ s("bd")
     </section>
 
     <section>
-        Stacking:
+        Stacking (aka <code>polyrhythm</code>):
         <Strudel code={`
 s("bd")
 
@@ -63,8 +63,9 @@ s("bd")
 
 // whoops:
 // s("bd,hh sd,hh")
-
 // s("[bd,hh] [sd,hh]")
+
+// s("[bd sd], [hh hh oh]")
 `} />
     </section>
 
@@ -83,6 +84,7 @@ s("bd")
         Types of elements:
         <Strudel code={`
 s("bd hh sd hh")
+// s("bd ~ sd hh")
 
 // s("bd:0 bd:1 bd:2 bd:3")
 // s("sd:0 sd:1 sd:2 sd:3")
@@ -98,5 +100,26 @@ s("bd hh sd hh")
 
 // freq("100 200 300 400 500 600 700 800")
 `} />
+    </section>
+
+    <section>
+        More stuff:
+        <Strudel code={`
+s("[bd hh sd oh]/8")
+
+// s("[bd hh sd oh]*8")
+
+// n("bd!2 sd oh")
+
+// n("bd@2 sd oh")
+
+// s("{bd sd, hh hh oh}")
+
+// s("bd(3,8)")
+`} />
+    </section>
+
+    <section>
+        <iframe width=1000 height=500 src="https://strudel.tidalcycles.org/learn/mini-notation" title="Strudel Docs" />
     </section>
 </Slide>
