@@ -1,3 +1,7 @@
+# Repo copied from [https://github.com/rajasegar/svelte-slides](https://github.com/rajasegar/svelte-slides)
+
+---
+
 # Reveal.js + Svelte + Vite + TailwindCSS
 
 ![Svelte Slides logo](public/svelte-slides.jpg)
