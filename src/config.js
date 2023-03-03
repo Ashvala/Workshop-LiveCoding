@@ -12,7 +12,7 @@ import 'reveal.js/plugin/highlight/monokai.css';
 export default {
     // App Config
     app: {
-        name: 'Reveal.js with Svelte and Vite',
+        name: 'GTCMT Intro Live Coding Workshop (Spring 2023)',
     },
     // Reveal Config
     reveal: {
