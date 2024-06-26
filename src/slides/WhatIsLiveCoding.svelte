@@ -19,7 +19,7 @@ import Slide from '../lib/Slide.svelte';
         </blockquote>
     </section>
     <section>
-        <iframe title="TOPLAP Manifesto" src="https://toplap.org/wiki/ManifestoDraft"></iframe>
+        <iframe title="TOPLAP Manifesto" src="https://toplap.org/wiki/index.php?title=ManifestoDraft&oldid=22484"></iframe>
     </section>
 </Slide>
 

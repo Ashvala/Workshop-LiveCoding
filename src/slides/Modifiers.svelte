@@ -24,9 +24,9 @@ s("hh*4")
 
 // s("hh*4").crush(4)
 
-// n("c3 e3").decay(0.2).sustain(0)
+// note("c3 e3").decay(0.2).sustain(0)
 
-// n("c a f e").s('sawtooth')
+// note("c a f e").s('sawtooth')
         `} />
     </section>
 
@@ -44,9 +44,9 @@ s("hh*4")
 
 // s("hh*4").crush("<16 8 4 2 1>")
 
-// n("c3 e3").decay("<.1 .2 .3 .4>").sustain(0)
+// note("c3 e3").decay("<.1 .2 .3 .4>").sustain(0)
 
-// n("c a f e").s("sawtooth square triangle sine")
+// note("c a f e").s("sawtooth square triangle sine")
         `} />
 
         <aside class="notes">

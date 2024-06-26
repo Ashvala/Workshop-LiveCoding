@@ -89,12 +89,12 @@ s("bd hh sd hh")
 // s("bd:0 bd:1 bd:2 bd:3")
 // s("sd:0 sd:1 sd:2 sd:3")
 
-// n("c d e d")
+// note("c d e d")
 
 // mind the octave:
-// n("a b c e")
+// note("a b c e")
 
-// n("a4 b4 c5 d5 b4@2 g4 a4@5").slow(3)
+// note("a4 b4 c5 d5 b4@2 g4 a4@5").slow(3)
 
 // n("0 1 2 3 4 5").scale('C4 lydian')
 

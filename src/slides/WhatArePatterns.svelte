@@ -35,7 +35,7 @@ stack(
     <section>
         <p>Consider typing out a melody. For example:</p>
 
-        <Strudel code='n("c d e g c d e ab c d e a c d e bb").cpm(10)' />
+        <Strudel code='note("c d e g c d e ab c d e a c d e bb").cpm(10)' />
 
         <p>A bit unwieldy. What is the underlying structure? What if you want to change it?</p>
     </section>
@@ -43,7 +43,7 @@ stack(
     <section>
         <p>With patterns, this can be compressed:</p>
 
-        <Strudel code='n("c d e <g ab a bb>").cpm(40)' />
+        <Strudel code='note("c d e <g ab a bb>").cpm(40)' />
 
         <p>This expresses the fact that the melody consists of a four-note cells, with only the last note changing.</p>
 

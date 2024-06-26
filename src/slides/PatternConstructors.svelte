@@ -15,8 +15,8 @@ s("bd hh sd hh")
 // s("<bd sd>")
 // s(cat("bd", "sd"))
 
-// n("c4,e4,g4")
-// n(stack(c4, e4, g4))
+// note("c4,e4,g4")
+// note(stack(c4, e4, g4))
 // (note variables)
 
 // s("bd|sd")
